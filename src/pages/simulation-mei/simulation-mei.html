@@ -1,0 +1,51 @@
+<!--
+  Generated template for the SimulationMeiPage page.
+  
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  
+  <ion-navbar color='primary'>
+    <ion-title>Simulação MEI</ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+
+<ion-content padding>
+  <div align="center">
+    <br>
+    <ion-icon align="center" name="calculator" class="icon-title-page"></ion-icon>
+    <br><br>
+  </div>    
+  
+  <ion-item align="center">
+    <ion-label text-center >Faturamento Anual</ion-label>
+  </ion-item>
+  <ion-item align="center">
+    <ion-label>R$</ion-label>
+    <ion-input type="tel" [(ngModel)]="revenues" (keyup)="amountChange()" placeholder="0.00" ></ion-input>
+  </ion-item>
+  <button ion-button full primary (click)='calcMei()'>Consultar</button>
+  
+  <div *ngIf='flagShowCalcs'>
+
+    <ion-item align="center" color='secondary'>
+      <ion-label text-center >Imposto</ion-label>
+    </ion-item>
+    <ion-item align="center" color='secondary'>
+      <ion-label text-center >R$ {{tax.toFixed(2)}}</ion-label>
+    </ion-item>
+    
+    <br>
+    
+    <ion-item align="center" color='secondary'>
+      <ion-label text-center >Lucro Líquido</ion-label>
+    </ion-item>
+    <ion-item align="center" color='secondary'>
+      <ion-label text-center >R$ {{clearAmount.toFixed(2)}}</ion-label>
+    </ion-item>
+  </div>
+
+</ion-content>
