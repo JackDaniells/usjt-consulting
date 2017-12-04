@@ -24,8 +24,8 @@
     <ion-icon align="center" name="text" class="icon-title-page"></ion-icon>
     <br><br>
   </div>
-
-  <!--<ion-item align="center">
+  
+  <ion-item align="center">
     <ion-label >Nome</ion-label>
     <ion-input [(ngModel)]="name" ></ion-input>
   </ion-item>
@@ -39,12 +39,17 @@
     <ion-label >Email</ion-label>
     <ion-input type="email" [(ngModel)]="email" ></ion-input>
   </ion-item>
+
+  <ion-item align="center">
+      <ion-label >Mensagem</ion-label>
+    <ion-textarea [(ngModel)]="subject"></ion-textarea>
+  </ion-item>
   
   <button ion-button full secondary (click)="send()">Enviar</button>
--->
-<p text-center padding>
-  Para mais informações, entre em contato pelo email <br/>
-  <b>usjtconsulting@gmail.com</b>
-</p>
+  
+  <p text-center padding>
+    Para mais informações, entre em contato pelo email <br/>
+    <b>usjtconsulting@gmail.com</b>
+  </p>
   
 </ion-content>
