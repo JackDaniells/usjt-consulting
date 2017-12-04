@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { SimulationSimpleNationalPage } from '../simulation-simple-national/simulation-simple-national';
 import { SimulationMeiPage } from '../simulation-mei/simulation-mei';
+import { SimulationCltPage } from '../simulation-clt/simulation-clt';
 
 
 @Component({
@@ -20,5 +21,9 @@ export class SimulationPage {
 
   public openPageSimulatorMei(){
     this.navCtrl.push(SimulationMeiPage);
+  }
+
+  public openPageSimulatorCLT(){
+    this.navCtrl.push(SimulationCltPage);
   }
 }

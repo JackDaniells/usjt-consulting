@@ -19,6 +19,7 @@ import { ServicesPage } from '../pages/services/services';
 import { SimulationPage } from '../pages/simulation/simulation';
 import { SimulationSimpleNationalPage } from '../pages/simulation-simple-national/simulation-simple-national';
 import { SimulationMeiPage } from '../pages/simulation-mei/simulation-mei';
+import { SimulationCltPage } from '../pages/simulation-clt/simulation-clt';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -42,7 +43,8 @@ import {Utils} from './util';
     ServicesPage,
     SimulationPage,
     SimulationSimpleNationalPage,
-    SimulationMeiPage
+    SimulationMeiPage,
+    SimulationCltPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +67,8 @@ import {Utils} from './util';
     ServicesPage,
     SimulationPage,
     SimulationSimpleNationalPage,
-    SimulationMeiPage
+    SimulationMeiPage,
+    SimulationCltPage
   ],
   providers: [
     StatusBar,
