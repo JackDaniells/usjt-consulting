@@ -56,7 +56,7 @@ export class SimulationCltPage {
     }
     
     var inssDiscount = salary * percent;
-    if (inssDiscount > 608.45) inssDiscount = 608.45;
+    if (!percent || inssDiscount > 608.45) inssDiscount = 608.45;
     
     return inssDiscount;
   }
