@@ -1,0 +1,5 @@
+cd E:\others\usjt-consulting\platforms\android\build\outputs\apk
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.jks android-release-unsigned.apk my-alias
+
+zipalign -v 4 android-release-unsigned.apk UsjtConsulting.apk
