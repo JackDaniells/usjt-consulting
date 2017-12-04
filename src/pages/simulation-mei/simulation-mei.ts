@@ -49,7 +49,7 @@ export class SimulationMeiPage {
     if(Number(this.revenues)>60000) {
       this.doAlert();
     } else {
-      this.clearAmount = Number(this.revenues) - this.tax;
+      this.clearAmount = Number(this.revenues) - (this.tax * 12);
       this.flagShowCalcs = true;
     }
   }

@@ -99,7 +99,7 @@ export class SimulationSimpleNationalPage {
     this.taxCalculed = revenues * (this.tax / 100);
     if(revenues < 18000 || revenues > 3600000) this.doAlert();
     else {
-      this.clearAmount = revenues - this.taxCalculed;
+      this.clearAmount = revenues - (this.taxCalculed);
       this.flagShowCalcs = true;
     }
   }
